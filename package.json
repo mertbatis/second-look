@@ -1,0 +1,7 @@
+{
+  "name": "second-look",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "scripts": { "dev": "vite", "build": "vite build", "test": "node --test test/signals.test.js" }
+}

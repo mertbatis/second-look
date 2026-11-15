@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Second Look</title>
+  <meta name="description" content="Is this message a scam? Check it privately: Gemini Nano reads it on your device." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23234e9a'/%3E%3Ccircle cx='14' cy='14' r='7' fill='none' stroke='white' stroke-width='3'/%3E%3Cpath d='M19 19l6 6' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="brand"><span class="logo"></span><div><h1>Second Look</h1><p>Is this message a scam? Check it privately.</p></div></div>
+    <button id="device" class="pill" type="button">Checking on-device model…</button>
+  </header>
+  <main>
+    <section class="ask">
+      <label for="msg" class="label">Paste the text message, email or chat message you're not sure about</label>
+      <textarea id="msg" rows="6" placeholder="Paste the message here…"></textarea>
+      <div class="examples"><span>Or try an example:</span>
+        <button type="button" class="chip" data-ex="0">Parcel text</button>
+        <button type="button" class="chip" data-ex="1">"Hi Mum"</button>
+        <button type="button" class="chip" data-ex="2">Amazon charge</button>
+        <button type="button" class="chip" data-ex="3">Dinner plans</button>
+      </div>
+      <button id="check" class="primary" type="button">Check this message</button>
+      <p id="privacy" class="privacy"></p>
+    </section>
+    <section id="result" class="result" hidden></section>
+  </main>
+  <footer class="foot">Second Look is open source (Apache-2.0) · Firebase AI Logic hybrid inference · It helps you spot warning signs; it can't promise a message is safe.</footer>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
